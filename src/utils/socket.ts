@@ -45,7 +45,6 @@ export default class SocketService {
     }
 
     this.ws.onmessage = msg => {
-      console.log(msg, 'agag')
       const recvData = JSON.parse(msg.data)
       const socketType = recvData.socketType
       if (this.callBackMapping[socketType]) {

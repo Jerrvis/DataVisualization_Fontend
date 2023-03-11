@@ -103,7 +103,7 @@ const chartResize = () => {
 
 // 获取数据
 const getData = (data: any) => {
-  console.log(data)
+
   allData = data
   updateChartData()
 }
